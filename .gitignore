@@ -1,0 +1,18 @@
+# Środowisko wirtualne
+venv/
+
+# Pliki bazy danych
+*.sqlite3
+
+# Cache i pliki tymczasowe
+__pycache__/
+*.pyc
+*.pyo
+.Python
+
+# Pliki IDE (VS Code, PyCharm itp.)
+.vscode/
+*.idea/
+
+# Dodatkowe pliki
+*.log
