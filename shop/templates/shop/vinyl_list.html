@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista Winylów</title>
+</head>
+<body>
+    <h1>Lista Winylów</h1>
+    <ul>
+        {% for vinyl in vinyls %}
+            <li>
+                <strong>{{ vinyl.title }}</strong> - {{ vinyl.artist }} 
+                ({{ vinyl.genre }}, {{ vinyl.release_year }}) - Cena: {{ vinyl.price }} zł
+            </li>
+        {% empty %}
+            <li>Brak dostępnych winyli.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
