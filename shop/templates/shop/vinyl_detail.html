@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ vinyl.title }}</title>
+</head>
+<body>
+    <h1>{{ vinyl.title }}</h1>
+    <p><strong>Artysta:</strong> {{ vinyl.artist }}</p>
+    <p><strong>Gatunek:</strong> {{ vinyl.genre }}</p>
+    <p><strong>Rok wydania:</strong> {{ vinyl.release_year }}</p>
+    <p><strong>Cena:</strong> {{ vinyl.price }} zł</p>
+    <a href="{% url 'vinyl_list' %}">Powrót do listy winyli</a>
+</body>
+</html>
