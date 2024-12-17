@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edytuj Winyl</title>
+</head>
+<body>
+    <h1>Edytuj Winyl: {{ object.title }}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Zapisz zmiany</button>
+    </form>
+    <a href="{% url 'vinyl_list' %}">Powrót do listy winyli</a>
+</body>
+</html>

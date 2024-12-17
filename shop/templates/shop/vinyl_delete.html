@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Usuń Winyl</title>
+</head>
+<body>
+    <h1>Czy na pewno chcesz usunąć winyl: {{ object.title }}?</h1>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Tak, usuń</button>
+    </form>
+    <a href="{% url 'vinyl_list' %}">Powrót do listy winyli</a>
+</body>
+</html>
