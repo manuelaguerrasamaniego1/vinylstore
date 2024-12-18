@@ -1,0 +1,16 @@
+<h1>Winyle wydane w roku: {{ year }}</h1>
+
+{% if vinyls %}
+    <ul>
+        {% for vinyl in vinyls %}
+            <li>
+                <a href="{% url 'vinyl_detail' vinyl.pk %}">{{ vinyl.title }} - {{ vinyl.artist }}</a>
+                ({{ vinyl.release_year }}) - {{ vinyl.price }} zł
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>Brak winyli wydanych w tym roku.</p>
+{% endif %}
+
+<a href="{% url 'vinyl_list' %}">Powrót do listy wszystkich winyli</a>

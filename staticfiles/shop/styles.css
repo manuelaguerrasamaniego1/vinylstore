@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ffc0cb;
+    /* Jasnoróżowe tło */
+    color: #003366;
+    /* Ciemnoniebieski kolor tekstu */
+}
+
+h1,
+h2,
+h3 {
+    color: #003366;
+    /* Ciemnoniebieski kolor nagłówków */
+}
+
+a {
+    color: #0066cc;
+    /* Ciemnoniebieski kolor linków */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #0066cc;
+    /* Ciemnoniebieski kolor przycisku */
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #004080;
+    /* Ciemniejszy niebieski przy najechaniu */
+}
